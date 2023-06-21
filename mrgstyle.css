@@ -6,20 +6,20 @@
 
 html {
 	font-family: 'Poppins', sans-serif;
-	font-size: 8pt;
+	font-size: 10pt;
 	font-weight: bold;
 	color:var(--darkblue);
 	text-align: center;
 }
 
 #image-one{
-	width: 215px
+	width: calc(min(1vw,7.6px)*28)
 }
 #image-two{
-	width: 173px
+	width: calc(min(1vw,7.6px)*23)
 }
 #image-three{
-	width: 215px
+	width: calc(min(1vw,7.6px)*28)
 }
 
 .surroundtop{
@@ -79,7 +79,6 @@ html {
 }
 
 .backtext{
-    font-size: 12pt;
     font-weight: bold;
     position: relative;
     top: 4px;
@@ -149,7 +148,7 @@ html {
     border-radius: 36px;
 	width:calc(96% - 4px);
 	margin: 0 2% 0 2%;
-	font-size: 7pt;
+	font-size: 8pt;
 }
 
 .contact.blue{
