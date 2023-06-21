@@ -70,6 +70,7 @@ html {
     z-index: -1;
 }
 
+
 .backtextbox.pink{
 	background-color: var(--pink);
 }
@@ -78,10 +79,32 @@ html {
 	background-color: var(--lightblue);
 }
 
+.backtextbox.fivesixths{
+	font-style: italic;
+	width: calc(500%/6);
+	text-align: right;
+	float: left;
+}
+.backtextbox.onesixth{
+	width: calc(100%/6);
+	float: left;
+}
+
 .backtext{
     font-weight: bold;
     position: relative;
     top: 4px;
+}
+
+
+.backtext.italic{
+	font-style: italic;
+}
+
+.summaryrow{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 
@@ -174,6 +197,7 @@ html {
 	font-family: 'Poppins';
 	color:var(--darkblue);
 	margin-top: 2.5px;
+	width:100%;
 }
 .calcdatacontainer{
 	border: 2px solid var(--darkblue);

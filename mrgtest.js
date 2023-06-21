@@ -117,6 +117,8 @@ function applyToTable(table,data,rownum){
 	columns = table.children
 	for(let i = 0; i< data.length;i++){
 		column = columns[i]
+		console.log(i)
+		console.log(rownum)
 		elements = column.children
 		element = elements[rownum].children[0]
 		if(rounds[i] == 2){
