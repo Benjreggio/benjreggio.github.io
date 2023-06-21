@@ -1,8 +1,9 @@
 <html></html>
 
 <document>
-	<script src = mrgprescript.js></mrgtest></script>
-	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="mrgstyle.css">
 	<body>
 		<div>
@@ -14,11 +15,11 @@
 					<div class="img-hldr-1"> <img src = "BC_STACKED_white_lightblue.png"  id = "image-one">
 					</div>
 
-					<div class = "contact">
+					<div class = "contact blue">
 						<div>19 Mattakeesett St</div>
 						<div>Pembroke, MA 02359</div>
 						<div>sbollinger@bostonconnect.com</div>
-						<div>508.317.5729</div>
+						<div>(508) 317-5729</div>
 					</div>
 				</div>
 				<div class = "middle-holder">
@@ -39,6 +40,7 @@
 									<div class = "backtextbox blue"><div class = "backtext">Number of payments per year: </div></div>
 									<div class = "backtextbox"><div class = "backtext">Interest rate (annual): </div></div>
 									<div class = "backtextbox pink"><div class = "backtext">Monthly payment: </div></div>
+									<div class = "backtextbox"><div class = "backtext">Total Payments: </div></div>
 								</div>
 							</div>
 						</div>
@@ -47,10 +49,10 @@
 								<div class = "calcdatacontainer"><input id = "loan" value="$500,000" class="calcdata"></div>
 								<div class = "calcdatacontainer"><input id = "period" value = '30' class="calcdata"></div>
 								<div class = "calcdatacontainer"><input id = "nper" value = '12' class="calcdata"></div>
-								<div class = "calcdatacontainer" hidden><input id = "rate" value = '6.000%' hidden class="calcdata"></div> 
-								<div class = "calcdatacontainer"><div class="calcdata"> 6.000%</div></div>
+								<div class = "calcdatacontainer"><input id = "rate" value = '6.000%' class="calcdata"></div> 
+								<div class = "calcdatacontainer" hidden><div class="calcdata"> 6.000%</div></div>
 								<div class = "calcdatacontainer"><div id = 'monthly'class="calcdata"></div></div>
-								<div class = "calcdatacontainer"><div id = 'total'class="calcdata"></div></div>
+								<div class = "calcdatacontainer"><div id = 'totalpmt' class="calcdata"></div></div>
 							</div>
 						</div>
 					</div>
@@ -62,7 +64,7 @@
 						<div>206 Washington Street, Suite 202</div>
 						<div>Norwell, MA 02061</div>
 						<div>jcelia@loandepot.com</div>
-						<div>(617 407 - 2524</div>
+						<div>(617) 407 - 2524</div>
 					</div>
 				</div>
 			</div>
@@ -71,6 +73,7 @@
 				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
 				<div class = "table head" id = "table three">
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Interest Rate</div>
 						</div>
@@ -88,8 +91,9 @@
 					
 					
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
-							<div class = "backtext">Payment</div>
+							<div class = "backtext">Old Payment</div>
 						</div>
 						<div class = "table cell backtextbox">
 							<div class = "backtext">3%</div>
@@ -103,8 +107,9 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
-							<div class = "backtext">Payment</div>
+							<div class = "backtext">New Temporary Payment</div>
 						</div>
 						<div class = "table cell backtextbox">
 							<div class = "backtext">3%</div>
@@ -118,6 +123,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Monthly Subsidy</div>
 						</div>
@@ -133,6 +139,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext"># Of Payments</div>
 						</div>
@@ -148,6 +155,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Annual Payments</div>
 						</div>
@@ -165,6 +173,7 @@
 				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
 				<div class = "table head" id = "table two">
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Interest Rate</div>
 						</div>
@@ -179,6 +188,7 @@
 					
 					
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Payment</div>
 						</div>
@@ -191,6 +201,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Payment</div>
 						</div>
@@ -203,6 +214,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Monthly Subsidy</div>
 						</div>
@@ -215,6 +227,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext"># Of Payments</div>
 						</div>
@@ -227,6 +240,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Annual Payments</div>
 						</div>
@@ -241,6 +255,7 @@
 				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
 				<div class = "table head" id = "table one">
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Interest Rate</div>
 						</div>
@@ -252,6 +267,7 @@
 					
 					
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Payment</div>
 						</div>
@@ -261,6 +277,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Payment</div>
 						</div>
@@ -270,6 +287,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Monthly Subsidy</div>
 						</div>
@@ -279,6 +297,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext"># Of Payments</div>
 						</div>
@@ -288,6 +307,7 @@
 					</div>
 
 					<div class = "table column">
+						<div class = "table cell backtextbox"></div>
 						<div class = "table cell backtextbox pink">
 							<div class = "backtext">Annual Payments</div>
 						</div>

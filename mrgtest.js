@@ -1,6 +1,7 @@
 var gobutton = document.getElementById('go');
 var monthly = document.getElementById('monthly')
 var realmonthly = document.getElementById('realmonthly')
+var totalpmt = document.getElementById('totalpmt')
 
 var loan = document.getElementById('loan');
 var rate = document.getElementById('rate');
@@ -11,7 +12,9 @@ var imgone = document.getElementById('image-one');
 var imgtwo = document.getElementById('image-two');
 var imgthree = document.getElementById('image-three');
 
-var topshelf = document.getElementsByClassName('quarter-holder') + document.getElementsByClassName('middle-holder');
+//var topshelf = document.getElementsByClassName('quarter-holder') + document.getElementsByClassName('middle-holder');
+
+var r = document.querySelector(':root');
 
 
 function resizeImages(){
@@ -19,21 +22,21 @@ function resizeImages(){
 	units = ww
 	if(ww>768){
 		units = 768
-		console.log('limit')
 	}
 	imgone.width = units*227.5/971
 	imgtwo.width = units*182.3/971
 	imgthree.width = units*225.6/971
-	for(let i = 0; i< 2;i++){
+	/*for(let i = 0; i< 2;i++){
 		mydiv = document.getElementsByClassName('quarter-holder')[i]
 		mydiv.style.height = units*40.7/100
 	}
 	mydiv = document.getElementsByClassName('middle-holder')[0]
-	mydiv.style.height = units*40.7/100
+	mydiv.style.height = units*40.7/100*/
+
 }
 
-window.onresize = resizeImages
-resizeImages()
+//window.onresize = resizeImages
+//resizeImages()
 //imgone.width = 227.5/1.3
 //imgtwo.width = 182.3/1.3
 //imgthree.width = 225.6/1.3
@@ -98,6 +101,7 @@ function calcMonthlyPMT(){
 	var result = PMT(l,r,N);
 	monthly.innerHTML = numToPrice(result);
 	currentPayment = result;
+	totalpmt.innerHTML = numToPrice(result*N)
 }
 
 
@@ -120,7 +124,6 @@ function applyToTable(table,data,rownum){
 		}
 		else{
 			if(rounds[i] == 5){
-				console.log(numToPercent(data[i]))
 				element.innerHTML = numToPercent(data[i]);
 			}
 			else{
@@ -152,7 +155,7 @@ function getTableRows(){
 		data = getDataFromPayment(rates[i],payments[i])
 		asp = asp + data[5]
 		for(let j = i; j<3;j++){
-			applyToTable(tables[j],data,j-i + 1)
+			applyToTable(tables[j],data,j-i + 2)
 		}
 		//tables[i].rows[3+i].cells[1].innerHTML = numToPrice(asp)
 	}

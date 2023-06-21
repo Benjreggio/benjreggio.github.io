@@ -4,34 +4,46 @@
   --pink: #e2cddd;
 }
 
-div {
-	font-family: 'Poppins';
-	font-size: 10px;
+html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10pt;
 	font-weight: bold;
 	color:var(--darkblue);
 	text-align: center;
 }
+
+#image-one{
+	width: 215px
+}
+#image-two{
+	width: 173px
+}
+#image-three{
+	width: 215px
+}
+
 .surroundtop{
     border: 2px solid var(--darkblue);
     border-radius: 36px;
-    height:226px;
 }
 
 .title-area {
     text-align: center;
     border: 2px solid var(--darkblue);
     border-radius: 36px;
+    height: 108px;
+    margin: 12px 0 12px 0;
 }
 
 .titlerow{
-	width:100vw;
+	width:100%;
 	height:23.4px;
 	background-color: var(--lightblue);
 	float: left;
 }
 
 .titlerow-text{
-    font-size: 13px;
+    font-size: 13pt;
     font-weight: bold;
 	text-align: center;
     position: relative;
@@ -40,7 +52,8 @@ div {
 
 .table.column{
 	float: left;
-	width: 16vw;
+	width: calc(98%/6 - 4px);
+	margin: 0 calc(1%/6) 0 calc(1%/6);
     border: 2px solid var(--darkblue);
     border-radius: 36px;
 }
@@ -66,7 +79,7 @@ div {
 }
 
 .backtext{
-    font-size: 12px;
+    font-size: 12pt;
     font-weight: bold;
     position: relative;
     top: 4px;
@@ -74,12 +87,14 @@ div {
 
 
 .title{
-	font-size: 39px;
+	font-size: 39pt;
 	margin: auto;
   	font-weight: bold;
+  	height: 62px;
 }
 .subtitle{
-	font-size: 24px;
+	font-size: 24pt;
+	font-weight: normal;
 	margin: auto;
 }
 
@@ -89,25 +104,34 @@ div {
 
 .img-hldr-2{
 	position: absolute;
-	top:-1vw;
-	left:5.6vw;
+	top:calc(max(-1vw,-7.6px));
+	width: 25%;
 }
 .img-hldr-1{
 	position: absolute;
-	top:12.4vw;
-	left:2.9vw;
+	top:calc(min(1vw,7.6px)*18);
+	width: 25%;
 }
 .img-hldr-3{
 	position: absolute;
-	top: 3.3vw;
+	top:calc(min(1vw,7.6px)*3.3);
+	width: 25%;
 }
 
 .middle-holder{
-    width: 40.7vw;
+    width: 50%;
     margin: auto;
     float: left;
-    height: 36.6vw;
-    margin: 0 .3vw 0 .3vw;
+    height: 100%;
+}
+
+.quarter-holder{
+    width: 25%;
+    margin: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: flex-end;
 }
 
 .calculator {
@@ -116,23 +140,20 @@ div {
 
 .calculator-container{
 	text-align: center;
-	float: left;
+	height: 351px;
 }
 
 .contact{
     text-align: center;
     border: 2px solid var(--darkblue);
     border-radius: 36px;
-	width:26.5vw;
+	width:calc(96% - 4px);
+	margin: 0 2% 0 2%;
+	font-size: 9pt;
 }
 
-.quarter-holder{
-	width:26.5vw;
-    height: 36.6vw;
-    float: left;
-    margin: 0 .6vw 0 .6vw;
-    display: flex;
-    align-items: flex-end;
+.contact.blue{
+	background-color: var(--lightblue);
 }
 
 .rightside{
@@ -152,7 +173,7 @@ div {
     border: none;
     text-align: start;
 	font-family: 'Poppins';
-	font-size: 12px;
+	font-size: 12pt;
 	color:var(--darkblue);
 	margin-top: 2.5px;
 	width: 12vw;
