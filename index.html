@@ -2,94 +2,302 @@
 
 <document>
 	<script src = mrgprescript.js></mrgtest></script>
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="mrgstyle.css">
 	<body>
-		<h1>
-			Just a test html file, nothing to see here
-		</h1>
+		<div>
+			<div class = "calculator-container">
+				<div class = "quarter-holder">
 
-		<div>
-			<t>Loan amount: </t><input id = "loan" value="$500,000">
-		</div>
-		<div>
-			<t>Loan period in years: </t><input id = "period" value = '30'>
-		</div>
-		<div>
-			<t>Number of payments per year: </t><input id = "nper" value = '12'>
-		</div>
-		<div>
-			<t>Interest rate (annual): </t><input id = "rate" value = '6.000%' hidden> <t> 6.000%</t>
-		</div>
-		<div>
-			<t>Monthly payment: </t><t id = 'monthly'></t>
-		</div>
+					<div class="img-hldr-2"> <img src = "Susan Bollinger4.png"  id = "image-two">
+					</div>
+					<div class="img-hldr-1"> <img src = "BC_STACKED_white_lightblue.png"  id = "image-one">
+					</div>
 
-		<table id = "table three">
-			<tr>
-				<th>3-2-1 Buy Down</th>
-			</tr>
-			<tr>
-				<th>Interest Rate </th>
-				<th>Payment</th>
-				<th>Payment</th>
-				<th>Monthly Subsidy </th>
-				<th># Of Payments </th>
-				<th>Annual Subsidy Payments </th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th>3-2-1 Buydown cost:</th> <th></th>
-			</tr>
-		</table>
-		<table id = "table two">
-			<tr>
-				<th>2-1 Buy Down</th>
-			</tr>
-			<tr>
-				<th>Interest Rate </th>
-				<th>Payment</th>
-				<th>Payment</th>
-				<th>Monthly Subsidy </th>
-				<th># Of Payments </th>
-				<th>Annual Subsidy Payments </th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th>2-1 Buydown cost:</th> <th></th>
-			</tr>
-		</table>
-		<table id = "table one">
-			<tr>
-				<th>1-0 Buy Down</th>
-			</tr>
-			<tr>
-				<th>Interest Rate </th>
-				<th>Payment</th>
-				<th>Payment</th>
-				<th>Monthly Subsidy </th>
-				<th># Of Payments </th>
-				<th>Annual Subsidy Payments </th>
-			</tr>
-			<tr>
-				<th></th><th></th><th></th><th></th><th></th><th></th>
-			</tr>
-			<tr>
-				<th>1-0 Buydown cost:</th> <th></th>
-			</tr>
-		</table>
+					<div class = "contact">
+						<div>19 Mattakeesett St</div>
+						<div>Pembroke, MA 02359</div>
+						<div>sbollinger@bostonconnect.com</div>
+						<div>508.317.5729</div>
+					</div>
+				</div>
+				<div class = "middle-holder">
+					<div class= "title-area">
+						<div class = "title">
+							Temporary
+						</div>
+						<h2 class = "subtitle">
+							Buy Down Calculator
+						</h2>
+					</div>
+					<div class = "calculator">
+						<div class = "rightside">
+							<div class = "surroundtop">
+							<div style= "margin: 20px 0 20px 0";>
+									<div class = "backtextbox pink"><div class = "backtext">Loan amount: </div></div>
+									<div class = "backtextbox"><div class = "backtext">Loan period in years: </div></div>
+									<div class = "backtextbox blue"><div class = "backtext">Number of payments per year: </div></div>
+									<div class = "backtextbox"><div class = "backtext">Interest rate (annual): </div></div>
+									<div class = "backtextbox pink"><div class = "backtext">Monthly payment: </div></div>
+								</div>
+							</div>
+						</div>
+						<div class="leftside">
+							<div style= "margin: 22px 0 20px 0";>
+								<div class = "calcdatacontainer"><input id = "loan" value="$500,000" class="calcdata"></div>
+								<div class = "calcdatacontainer"><input id = "period" value = '30' class="calcdata"></div>
+								<div class = "calcdatacontainer"><input id = "nper" value = '12' class="calcdata"></div>
+								<div class = "calcdatacontainer" hidden><input id = "rate" value = '6.000%' hidden class="calcdata"></div> 
+								<div class = "calcdatacontainer"><div class="calcdata"> 6.000%</div></div>
+								<div class = "calcdatacontainer"><div id = 'monthly'class="calcdata"></div></div>
+								<div class = "calcdatacontainer"><div id = 'total'class="calcdata"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "quarter-holder">
+					<div class = "img-hldr-3"> <img src = "Team JC Logo_Final.jpg" id = "image-three">
+					</div>
+					<div class = "contact">
+						<div>206 Washington Street, Suite 202</div>
+						<div>Norwell, MA 02061</div>
+						<div>jcelia@loandepot.com</div>
+						<div>(617 407 - 2524</div>
+					</div>
+				</div>
+			</div>
 
+			<div style = "float:left">
+				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
+				<div class = "table head" id = "table three">
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Interest Rate</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					
+					
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Monthly Subsidy</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext"># Of Payments</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Annual Payments</div>
+						</div>
+						<div class = "table cell backtextbox">
+							<div class = "backtext">3%</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+				</div>
+				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
+				<div class = "table head" id = "table two">
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Interest Rate</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					
+					
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Monthly Subsidy</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext"># Of Payments</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Annual Payments</div>
+						</div>
+						<div class = "table cell backtextbox blue">
+							<div class = "backtext">2%</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+				</div>
+				<div class = "titlerow"><div class = "titlerow-text">3-2-1 Buy Down</div></div>
+				<div class = "table head" id = "table one">
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Interest Rate</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					
+					
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Payment</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Monthly Subsidy</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext"># Of Payments</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+
+					<div class = "table column">
+						<div class = "table cell backtextbox pink">
+							<div class = "backtext">Annual Payments</div>
+						</div>
+						<div class = "table cell">
+							<div class = "backtext">1%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script src = mrgtest.js></mrgtest></script>
 

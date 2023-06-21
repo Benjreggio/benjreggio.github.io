@@ -7,6 +7,37 @@ var rate = document.getElementById('rate');
 var period = document.getElementById('period');
 var nper = document.getElementById('nper');
 
+var imgone = document.getElementById('image-one');
+var imgtwo = document.getElementById('image-two');
+var imgthree = document.getElementById('image-three');
+
+var topshelf = document.getElementsByClassName('quarter-holder') + document.getElementsByClassName('middle-holder');
+
+
+function resizeImages(){
+	ww = window.innerWidth
+	units = ww
+	if(ww>768){
+		units = 768
+		console.log('limit')
+	}
+	imgone.width = units*227.5/971
+	imgtwo.width = units*182.3/971
+	imgthree.width = units*225.6/971
+	for(let i = 0; i< 2;i++){
+		mydiv = document.getElementsByClassName('quarter-holder')[i]
+		mydiv.style.height = units*40.7/100
+	}
+	mydiv = document.getElementsByClassName('middle-holder')[0]
+	mydiv.style.height = units*40.7/100
+}
+
+window.onresize = resizeImages
+resizeImages()
+//imgone.width = 227.5/1.3
+//imgtwo.width = 182.3/1.3
+//imgthree.width = 225.6/1.3
+
 var currentPayment = 0;
 
 function PMT(l,r,N){
@@ -79,9 +110,11 @@ function getDataFromPayment(r,p){
 
 function applyToTable(table,data,rownum){
 	var rounds = [5,2,2,2,0,2]
-	row = table.rows[rownum];
+	columns = table.children
 	for(let i = 0; i< data.length;i++){
-		element = row.cells[i]
+		column = columns[i]
+		elements = column.children
+		element = elements[rownum].children[0]
 		if(rounds[i] == 2){
 			element.innerHTML = numToPrice(data[i]);
 		}
@@ -119,9 +152,9 @@ function getTableRows(){
 		data = getDataFromPayment(rates[i],payments[i])
 		asp = asp + data[5]
 		for(let j = i; j<3;j++){
-			applyToTable(tables[j],data,j-i + 2)
+			applyToTable(tables[j],data,j-i + 1)
 		}
-		tables[i].rows[3+i].cells[1].innerHTML = numToPrice(asp)
+		//tables[i].rows[3+i].cells[1].innerHTML = numToPrice(asp)
 	}
 }
 
@@ -132,6 +165,7 @@ function recalc(){
 		getTableRows();
 	}
 }
+
 
 recalc();
 
