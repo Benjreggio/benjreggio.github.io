@@ -13,13 +13,13 @@ html {
 }
 
 #image-one{
-	width: calc(min(1vw,7.6px)*28)
+	width: calc(min(215px,95%))
 }
 #image-two{
-	width: calc(min(1vw,7.6px)*23)
+	width: calc(min(173px,75%))
 }
 #image-three{
-	width: calc(min(1vw,7.6px)*28)
+	width: calc(min(215px,95%))
 }
 
 .surroundtop{
@@ -148,7 +148,7 @@ html {
     border-radius: 36px;
 	width:calc(96% - 4px);
 	margin: 0 2% 0 2%;
-	font-size: 8pt;
+	font-size: 7pt;
 }
 
 .contact.blue{
