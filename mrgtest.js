@@ -51,7 +51,7 @@ function numToPercent(n){
 }
 
 function percentToNum(p){
-	r = Number(p.slice(0,p.length - 1))/100
+	r = Number(p)/100
 	return r;
 }
 
