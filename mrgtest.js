@@ -75,9 +75,9 @@ function calcMonthlyPMT(){
 		return l/N
 	}
 	var result = PMT(l,r,N);
-	monthly.innerHTML = numToPrice(result);
+	monthly.innerHTML = numToPrice(result).slice(1,result.length);
 	currentPayment = result;
-	totalpmt.innerHTML = numToPrice(result*N)
+	totalpmt.innerHTML = N
 }
 
 

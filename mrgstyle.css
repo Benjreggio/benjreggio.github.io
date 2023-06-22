@@ -199,12 +199,19 @@ html {
 	font-family: 'Poppins';
 	color:var(--darkblue);
 	margin-top: 2.5px;
-	width:100%;
+	width:80%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
-.calcdata.short{
-	width: 90%;
+.calcdata.shortleft{
+	margin-left: 0%;
 	float: left;
+}
+.calcdata.shortright{
+	margin-right: 0%;
+	float: left;
+
 }
 
 .pindata{
