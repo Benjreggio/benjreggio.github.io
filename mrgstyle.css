@@ -136,7 +136,7 @@ html {
 }
 .img-hldr-3{
 	position: absolute;
-	top:calc(min(1vw,7.6px)*3.3);
+	top:calc(min(1vw,7.6px)*4);
 	width: 25%;
 }
 
@@ -172,6 +172,8 @@ html {
 	width:calc(96% - 4px);
 	margin: 0 2% 0 2%;
 	font-size: 7pt;
+	position: relative;
+	bottom: 20px;
 }
 
 .contact.blue{
@@ -199,6 +201,17 @@ html {
 	margin-top: 2.5px;
 	width:100%;
 }
+
+.calcdata.short{
+	width: 90%;
+	float: left;
+}
+
+.pindata{
+	float: left;
+	width: 10%;
+}
+
 .calcdatacontainer{
 	border: 2px solid var(--darkblue);
 	border-radius: 36px;
