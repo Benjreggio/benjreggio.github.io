@@ -12,7 +12,7 @@ var imgone = document.getElementById('image-one');
 var imgtwo = document.getElementById('image-two');
 var imgthree = document.getElementById('image-three');
 
-var mobileclassnames = ["contact","middle-holder","quarter-holder","table column","title-area","title","subtitle","backtextbox","backtext","calculator-container","calcdata","calcdatacontainer","titlerow","mobileonly"]
+var mobileclassnames = ["table-holder","contact","middle-holder","quarter-holder","table column","title-area","title","subtitle","backtextbox","backtext","calculator-container","calcdata","calcdatacontainer","titlerow","mobileonly"]
 var mobileclasses = []
 
 window.mobileCheck = function() {

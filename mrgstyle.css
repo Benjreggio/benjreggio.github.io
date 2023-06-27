@@ -47,8 +47,9 @@ html {
 	background-color: var(--lightblue);
 	float: left;
 }
+
 .titlerow.mobile{
-	height: 50px;
+	height: calc(23.4px + var(--extrabacktextsizemobile));
 	font-size: var(--mediumtextmobile);
 }
 
@@ -206,7 +207,7 @@ html {
 	height: 381px;
 }
 .calculator-container.mobile{
-	height: 600px;
+	height: 450px;
 }
 
 .contact{
@@ -288,9 +289,9 @@ html {
 .mobileonly.mobile{
 	display:flex;
 	flex-direction: column;
+	height: 600px;
 }
 .mobile-contact-holder{
-	margin:auto;
 	width: 100%;
 }
 .contact.mobile{
@@ -299,4 +300,19 @@ html {
 .image-centerer{
 	width: 70%;
 	margin: 0 15% 0 15%;
+}
+
+.table-holder{
+	width: 100%;
+	height: 650px;
+}
+.table-holder.mobile{
+	height: 1065px;
+}
+
+#full-app-container{
+	height: 1031px;
+}
+#full-app-container.mobile{
+	height: 2115px;
 }
