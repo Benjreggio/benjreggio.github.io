@@ -136,7 +136,7 @@ html {
   	height: 62px;
 }
 .title.mobile{
-	font-size:60pt;
+	font-size:36pt;
 }
 
 .subtitle{
@@ -146,7 +146,7 @@ html {
 	width: 100%;
 }
 .subtitle.mobile{
-	font-size: 36pt;
+	font-size: 24pt;
 }
 
 .image{
