@@ -2,7 +2,8 @@
   --darkblue: #063e66;
   --lightblue: #c4cfde;
   --pink: #e2cddd;
-  --mediumtextmobile:20pt;
+  --mediumtextmobile:10pt;
+  --extrabacktextsizemobile:0px;
 }
 
 html {
@@ -83,7 +84,7 @@ html {
 }
 
 .backtextbox.mobile{
-	height: 50px;
+	height: calc(28.5px + var(--extrabacktextsizemobile));
 }
 
 
@@ -277,7 +278,7 @@ html {
 }
 .calcdatacontainer.mobile{
 	font-size: var(--mediumtextmobile);
-	height: 46px;
+	height: calc(24.5px + var(--extrabacktextsizemobile));
 }
 
 
@@ -293,7 +294,7 @@ html {
 	width: 100%;
 }
 .contact.mobile{
-	font-size: 20pt;
+	font-size: var(--mediumtextmobile);
 }
 .image-centerer{
 	width: 70%;
